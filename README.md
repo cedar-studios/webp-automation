@@ -14,11 +14,11 @@ macOS automation to quickly resize images and convert to webp
 
 - node
 
-        `brew install node`
+        brew install node
 
 - sharp image processor
 
-        `npm i sharp -g`
+        npm i sharp -g
 
 ## Usage
 
