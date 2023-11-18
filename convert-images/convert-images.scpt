@@ -1,5 +1,5 @@
 on run {input, parameters}
-  -- converts files to comma-delimited list
+  -- convert files to comma-delimited list
 	set AppleScript's text item delimiters to ","
 	set fileList to {}
 	repeat with i in input

@@ -1,0 +1,20 @@
+const path = require("path");
+// change node_modules path if necessary
+// this can be found with > npm list -g
+const sharp = require("/opt/homebrew/lib/node_modules/sharp");
+
+const files = process.argv[2].split(",");
+const width = process.argv[3];
+const height = process.argv[4];
+
+files.forEach(async (file) => {
+  const dir = path.parse(file).dir;
+  const name = path.parse(file).name;
+
+  await sharp(file)
+    .resize(Number(width), Number(height) || undefined)
+    .webp({ quality: 90 })
+    .toFile(path.join(dir, name + ".webp"));
+});
+
+process.exit(0);
