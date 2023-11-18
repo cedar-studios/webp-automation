@@ -2,6 +2,10 @@
 
 macOS automation to quickly resize images and convert to webp
 
+### [Watch the Tutorial](https://youtu.be/wwmGBhFeHVU)
+
+### [Blog Post](https://cedarstudioswebdesign.com/blog/optimize-images-for-website-design/)
+
 ![short demonstration](./assets/demo.gif)
 
 ## Requirements
